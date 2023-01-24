@@ -50,6 +50,7 @@ function quantityChanged(event) {
 }
 
 function addToCartClicked(event) {
+    console.log("Clicked ..!", event)
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
